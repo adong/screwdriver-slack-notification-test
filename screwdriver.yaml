@@ -6,4 +6,4 @@ jobs:
     main:
         requires: [~pr, ~commit]
         steps:
-              - echo: echo hi
+              - echo: echo 'hello world'
