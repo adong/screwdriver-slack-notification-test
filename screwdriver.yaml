@@ -7,9 +7,6 @@ shared:
       statuses:
         - SUCCESS
         - FAILURE
-        - QUEUED
-        - RUNNING
-      minimized: false
 jobs:
   main:
     requires: [ ~pr, ~commit ]
