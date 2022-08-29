@@ -1,9 +1,17 @@
 shared:
-    image: node:14
-    settings:
-        slack: sd-build-bot-test
+  image: node:14
+  settings:
+    slack:
+      channels:
+        - sd-build-bot-test
+      statuses:
+        - SUCCESS
+        - FAILURE
+        - QUEUED
+        - RUNNING
+      minimized: false
 jobs:
-    main:
-        requires: [~pr, ~commit]
-        steps:
-              - echo: echo hi
+  main:
+    requires: [ ~pr, ~commit ]
+    steps:
+      - echo hi
