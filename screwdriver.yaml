@@ -1,12 +1,7 @@
 shared:
     image: node:14
     settings:
-        slack:
-          channels:
-           - 'sd-build-bot-test'
-          statuses:
-           - SUCCESS
-           - FAILURE
+        slack: sd-build-bot-test
 jobs:
     main:
         requires: [~pr, ~commit]
