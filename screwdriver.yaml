@@ -10,7 +10,7 @@ shared:
 jobs:
   main:
     annotations:
-      screwdriver.cd/buildPeriodically: H(30-31) * * * *
+      screwdriver.cd/buildPeriodically: H(36-37) * * * *
     requires: [ ~pr, ~commit ]
     steps:
       - echo hi
