@@ -9,8 +9,6 @@ shared:
         - FAILURE
 jobs:
   main:
-    annotations:
-      screwdriver.cd/buildPeriodically: H(40-41) * * * *
     requires: [ ~pr, ~commit ]
     steps:
       - echo hi
